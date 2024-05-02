@@ -1,0 +1,50 @@
+.table-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.table_body {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  margin-top: -5px;
+}
+
+.table_header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--bg-color-200-main);
+  margin-bottom: -5px;
+}
+
+table {
+  position: relative;
+}
+
+thead {
+  position: sticky;
+  background-color: var(--bg-color-200-main);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.table_body table {
+  width: 100%;
+}
+
+th {
+  color: var(--blue-300-main);
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.table_body table td,
+.table_body table th {
+  padding: 8px;
+  text-align: center;
+}
