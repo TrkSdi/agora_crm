@@ -1,0 +1,16 @@
+.sideBar {
+  padding-left: 40px;
+}
+
+.sideBar a {
+  text-decoration: none;
+  display: block;
+}
+
+.items-links {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.dash-container {
+  height: 100%;
+}
+
+.dash-cells-container {
+  display: grid;
+  height: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 20px 20px 0 20px;
+  gap: 20px;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "d c"
+    "d c";
+}
+
+.cell {
+  border-radius: 7px;
+  background-color: var(--white);
+}
+
+.cell-1 {
+  grid-area: a;
+}
+
+.cell-2 {
+  grid-area: b;
+}
+
+.cell-3 {
+  grid-area: c;
+}
+
+.cell-4 {
+  grid-area: d;
+}

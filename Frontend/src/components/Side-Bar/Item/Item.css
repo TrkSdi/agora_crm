@@ -1,0 +1,17 @@
+.item-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.item-container img {
+  width: 25px;
+  height: 25px;
+}
+
+.item-container p {
+  color: var(--blue-300-main);
+  font-size: 1.1rem;
+}

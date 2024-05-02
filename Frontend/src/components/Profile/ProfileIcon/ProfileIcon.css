@@ -1,0 +1,31 @@
+.user-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.user-icon h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.user-icon a {
+  text-decoration: none;
+}
+
+.user-icon a:visited {
+  text-decoration: none;
+  color: var(--blue-300-main);
+}
+
+.user-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logout {
+  font-size: 0.9rem;
+}

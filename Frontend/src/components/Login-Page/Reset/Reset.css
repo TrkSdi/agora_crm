@@ -1,0 +1,58 @@
+.reset-container {
+  width: 100vw;
+  max-width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.reset-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+small {
+  margin-top: 10px;
+}
+
+small .Link {
+  font-size: 0.9rem;
+}
+
+.small-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.small-btn p {
+  font-size: 1.1rem;
+  color: var(--blue-300-main);
+}
+
+.checkbtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.Link {
+  color: var(--blue-300-main);
+}

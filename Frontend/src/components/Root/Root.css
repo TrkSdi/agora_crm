@@ -1,0 +1,32 @@
+.root-container {
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(100px, 300px) 9fr;
+  grid-template-rows: 120px auto;
+  column-gap: 30px;
+  overflow: hidden;
+}
+
+.header {
+  grid-column: 1/-1;
+  align-self: center;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-col {
+  height: 80vh;
+  overflow: auto;
+}
+
+.right-col {
+  /* background-color: bisque; */
+  margin-right: 40px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: var(--blue-300-main);
+}
