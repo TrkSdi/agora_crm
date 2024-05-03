@@ -1,0 +1,39 @@
+.actionBar {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 30px 0px 30px 0px;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end; /* Alignement à droite */
+}
+
+.rightSide img {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  position: relative;
+}
+
+.rightSide img::after {
+  content: attr(alt);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 5;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.rightSide img:hover {
+  opacity: 0.7;
+}

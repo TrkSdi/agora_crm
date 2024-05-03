@@ -3,18 +3,23 @@
 import React from "react";
 import fakeData from "./FakeDataCustomer";
 import "./Customer.css";
+import { RxDotsVertical } from "react-icons/rx";
+import { IoChevronDown } from "react-icons/io5";
+import Action from "../Action/Action";
 
 const Customer = () => {
   return (
     <div className="table-container">
       <div className="table_header">
-        <h1>Client</h1>
+        <Action field="Client" />
       </div>
       <div className="table_body">
         <table>
           <thead>
             <tr>
-              <th>Date</th>
+              <th>
+                Date <IoChevronDown />
+              </th>
               <th>Nom</th>
               <th>REV</th>
               <th>Adresse</th>
@@ -24,6 +29,7 @@ const Customer = () => {
               <th>Credit safe</th>
               <th>Plan de relance</th>
               <th>Status</th>
+              <th></th>
             </tr>
           </thead>
 
@@ -53,6 +59,9 @@ const Customer = () => {
                   <td>{creditNote}</td>
                   <td>{recoveryPlan}</td>
                   <td>{status}</td>
+                  <td className="vertical-dot">
+                    <RxDotsVertical />
+                  </td>
                 </tr>
               );
             })}
