@@ -13,9 +13,22 @@ const Action = ({ field }) => {
         <h1>{field}</h1>
       </div>
       <div className="rightSide">
-        <img src={Below} alt="Importer" />
-        <img src={Upward} alt="Exporter" />
-        <img src={Plus} alt="Ajouter" />
+        <div className="actionIcon" data="Importer">
+          <label htmlFor="fileInput">
+            <img src={Below} alt="Importer" />
+          </label>
+          <input id="fileInput" type="file" style={{ display: "none" }} />
+        </div>
+        {/* A REVOIR FONCTION EXPORT */}
+        <div className="actionIcon" data="Exporter">
+          <label htmlFor="exportInput">
+            <img src={Upward} alt="Exporter" />
+          </label>
+          <input id="exportInput" type="file" style={{ display: "none" }} />
+        </div>
+        <div className="actionIcon" data="Ajouter">
+          <img src={Plus} alt="Ajouter" />
+        </div>
       </div>
     </section>
   );
