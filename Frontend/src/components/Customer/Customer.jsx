@@ -10,6 +10,9 @@ import Action from "../Action/Action";
 const Customer = () => {
   return (
     <div className="table-container">
+      <div className="modal">
+        <div className="post">TEST</div>
+      </div>
       <div className="table_header">
         <Action field="Client" />
       </div>

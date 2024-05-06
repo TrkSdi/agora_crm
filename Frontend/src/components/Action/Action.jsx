@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import "./Action.css";
 import Plus from "../../assets/action-icons/Plus.svg";
 import Upward from "../../assets/action-icons/Upward.svg";
 import Below from "../../assets/action-icons/Below.svg";
 
 const Action = ({ field }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <section className="actionBar">
       <div className="leftSide">
@@ -27,7 +29,14 @@ const Action = ({ field }) => {
           <input id="exportInput" type="file" style={{ display: "none" }} />
         </div>
         <div className="actionIcon" data="Ajouter">
-          <img src={Plus} alt="Ajouter" />
+          <img
+            src={Plus}
+            alt="Ajouter"
+            onClick={() => {
+              setIsClicked(!isClicked);
+              console.log("CLICK TEST", isClicked);
+            }}
+          />
         </div>
       </div>
     </section>
