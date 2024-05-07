@@ -6,12 +6,18 @@ import "./Customer.css";
 import { RxDotsVertical } from "react-icons/rx";
 import { IoChevronDown } from "react-icons/io5";
 import Action from "../Action/Action";
+import ModalCustomer from "./ModalCustomer";
+import { useGlobalContext } from "../context";
 
 const Customer = () => {
+  const { isModalOpen, closeModal } = useGlobalContext();
   return (
     <div className="table-container">
-      <div className="modal">
-        <div className="post">TEST</div>
+      <div
+        className={isModalOpen ? "modal-overlay show-modal" : "modal-overlay"}
+        onClick={closeModal}
+      >
+        <ModalCustomer />
       </div>
       <div className="table_header">
         <Action field="Client" />
@@ -20,9 +26,7 @@ const Customer = () => {
         <table>
           <thead>
             <tr>
-              <th>
-                Date <IoChevronDown />
-              </th>
+              <th>Date</th>
               <th>Nom</th>
               <th>REV</th>
               <th>Adresse</th>

@@ -5,9 +5,10 @@ import "./Action.css";
 import Plus from "../../assets/action-icons/Plus.svg";
 import Upward from "../../assets/action-icons/Upward.svg";
 import Below from "../../assets/action-icons/Below.svg";
+import { useGlobalContext } from "../context";
 
 const Action = ({ field }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const { openModal } = useGlobalContext();
 
   return (
     <section className="actionBar">
@@ -29,14 +30,7 @@ const Action = ({ field }) => {
           <input id="exportInput" type="file" style={{ display: "none" }} />
         </div>
         <div className="actionIcon" data="Ajouter">
-          <img
-            src={Plus}
-            alt="Ajouter"
-            onClick={() => {
-              setIsClicked(!isClicked);
-              console.log("CLICK TEST", isClicked);
-            }}
-          />
+          <img src={Plus} alt="Ajouter" onClick={openModal} />
         </div>
       </div>
     </section>
