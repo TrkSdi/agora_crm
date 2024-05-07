@@ -5,6 +5,7 @@ import "./Action.css";
 import Plus from "../../assets/action-icons/Plus.svg";
 import Upward from "../../assets/action-icons/Upward.svg";
 import Below from "../../assets/action-icons/Below.svg";
+import Filter from "../../assets/action-icons/Filter.svg";
 import { useGlobalContext } from "../context";
 
 const Action = ({ field }) => {
@@ -16,6 +17,9 @@ const Action = ({ field }) => {
         <h1>{field}</h1>
       </div>
       <div className="rightSide">
+        <div className="actionIcon" data="Filtrer">
+          <img src={Filter} alt="Filtrer" className="filter-icon" />
+        </div>
         <div className="actionIcon" data="Importer">
           <label htmlFor="fileInput">
             <img src={Below} alt="Importer" />
