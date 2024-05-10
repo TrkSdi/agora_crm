@@ -7,6 +7,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -14,10 +15,23 @@ export const AppProvider = ({ children }) => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setIsFilterModalOpen(false);
+  };
+
+  const openFilterModal = () => {
+    setIsFilterModalOpen(true);
   };
 
   return (
-    <AppContext.Provider value={{ isModalOpen, openModal, closeModal }}>
+    <AppContext.Provider
+      value={{
+        isModalOpen,
+        isFilterModalOpen,
+        openModal,
+        closeModal,
+        openFilterModal,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -10,6 +10,7 @@ const Prospect = () => {
   const { isModalOpen, closeModal } = useGlobalContext();
   return (
     <div className="table-container">
+      <h1>Prospect</h1>
       <div
         className={isModalOpen ? "modal-overlay show-modal" : "modal-overlay"}
         onClick={closeModal}
@@ -17,7 +18,7 @@ const Prospect = () => {
         <ModalCustomer />
       </div>
       <div className="table_header">
-        <Action field="Prospect" />
+        <Action />
       </div>
       <Table header={header} data={data} />
     </div>

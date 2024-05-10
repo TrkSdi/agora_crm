@@ -13,6 +13,7 @@ const Customer = () => {
   const { isModalOpen, closeModal } = useGlobalContext();
   return (
     <div className="table-container">
+      <h1>Client</h1>
       <div
         className={isModalOpen ? "modal-overlay show-modal" : "modal-overlay"}
         onClick={closeModal}
