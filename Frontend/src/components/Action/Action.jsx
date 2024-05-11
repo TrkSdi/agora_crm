@@ -8,6 +8,7 @@ import Below from "../../assets/action-icons/Below.svg";
 import Filter from "../../assets/action-icons/Filter.svg";
 import close from "../../assets/form-icons/close.svg";
 import { useGlobalContext } from "../context";
+import Tabs from "../Tabs/Tabs";
 
 const Action = () => {
   const { isFilterModalOpen, openModal, closeModal, openFilterModal } =
@@ -36,7 +37,7 @@ const Action = () => {
             isFilterModalOpen ? "modal-filter show-filter" : "modal-filter"
           }
         >
-          <h1>Filtrer</h1>
+          <Tabs />
           <button className="close-btn" onClick={closeModal}>
             <img
               src={close}

@@ -4,7 +4,7 @@ import ModalCustomer from "../../components/Customer/ModalCustomer";
 import Action from "../Action/Action";
 import { useGlobalContext } from "../context";
 import Table from "../Table/Table";
-import { header, data } from "../Table/HeaderData";
+import { header, data } from "../../FakeData/HeaderData";
 
 const Prospect = () => {
   const { isModalOpen, closeModal } = useGlobalContext();

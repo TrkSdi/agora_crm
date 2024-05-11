@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import React from "react";
-import fakeData from "./FakeDataCustomer";
+import fakeData from "../../FakeData/FakeDataCustomer";
 import "./Customer.css";
 import { RxDotsVertical } from "react-icons/rx";
 import { IoChevronDown } from "react-icons/io5";
